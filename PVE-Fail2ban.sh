@@ -16,9 +16,15 @@ cat >/etc/fail2ban/jail.local <<EOL
   bantime = 240
 EOL
 
-#filter testing
+#create Fail2ban filters
+cat >/etc/fail2ban/filter.d/proxmox-web-gui.conf << EOL
+[Definition]
+failregex = pvedaemon\[[0-9]+\]: authentication failure; rhost=<HOST> user=.* msg=.*
+EOL
+#Testing Fail2ban Filters
 fail2ban-regex /var/log/daemon.log /etc/fail2ban/filter.d/proxmox-web-gui.conf
 echo "filter testing";
+
 #test du service
 service fail2ban restart
 fail2ban-client -v status
