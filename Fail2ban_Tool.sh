@@ -58,7 +58,7 @@ service fail2ban restart
 service fail2ban status
 
 echo "thanks fo using this script ^^";
-
+echo "You can check jail configuration in /etc/fail2ban/jail.local";
 else
   echo "bye"
 fi
