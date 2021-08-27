@@ -1,13 +1,20 @@
 # Fail2ban-Proxmox
 fail2ban proxmox
 
-This is Fail2Ban for Proxmox Virtual Environment (PVE) & Proxmox Backup Server (PBS)
+This is Fail2Ban script for Proxmox Virtual Environment (PVE) & Proxmox Backup Server (PBS)
 
 copy in your shell
-wget https://github.com/OctoSystem/Fail2ban-Proxmox.git
+git clone https://github.com/OctoSystem/Fail2ban-Proxmox.git
 
 think to make good permission to your file :
-chmod +x PVE-Fail2ban.sh
+chmod +x fail2ban_Tool.sh
 
 RUN :
-./PVE-Fail2Ban.sh
+./fail2ban_Tool.sh
+
+Option :
+
+choose option :
+1 = PVE script
+2 = PBS script
+q = quit
