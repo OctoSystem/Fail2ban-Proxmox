@@ -18,3 +18,16 @@ choose option :
 1 = PVE script
 2 = PBS script
 q = quit
+
+
+
+slack message
+
+
+tuto_Util
+https://savjee.be/2015/09/Sending-fail2ban-notifications-and-others-to-slack-chat-channel/
+
+https://gist.github.com/Nihisil/29fd2971c9dd109ae245
+
+best ^^
+https://github.com/mikey32230/fail2ban-slack-action
